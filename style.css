@@ -1,0 +1,121 @@
+* {
+	margin: 0;
+	font-family:"Century";
+}
+
+@font-face {
+	font-family: "Century";
+	src: url('Century PS Pro Regular.otf') format('opentype');
+}
+
+@font-face {
+	font-family: "Century Italic";
+	src: url('Century PS Pro Italic.otf') format('opentype');
+}
+
+@font-face {
+	font-family: "Studio";
+	src: url('Studio Pro Medium.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: "Studio Italic";
+	src: url('Studio Pro Medium Italic.ttf') format('truetype');
+}
+
+body {
+	background-color: rgb(255, 255, 0);
+
+}
+
+a.text {
+	top: 0;
+	z-index: 3;
+	margin: 0;
+	padding-left: 50px;
+	position: fixed;
+	width: 100%;
+	font-size: 20pt;
+}
+
+#cit {
+	padding-left: 50px;
+}
+
+#emot {
+	width: 30px;
+	z-index: 4;
+	position: fixed;
+	bottom: 0;
+	padding-bottom: 3px;
+	margin-left: 50px;
+	transition: 0.5s;
+}
+
+#clph {
+	z-index: 3;
+	font-family: "Studio";
+	position: fixed;
+	bottom: 0;
+	display: none;
+	flex-wrap: wrap;
+	gap: 50px;
+	padding-bottom: 50px;
+	padding-left: 50px;
+}
+
+#emot:hover {
+	width: 35px;
+}
+
+a.text:hover {
+	font-family: "Century Italic";
+}
+
+#info {
+	font-size: 12pt;
+	display: none;
+	position: relative;
+	z-index: 2;
+	width: 45%;
+	margin-top: 30px;
+	background: none;
+}
+
+.frm {
+	z-index: 1;
+	margin-left: 0;
+	padding: 56.25% 0 0 0;
+	position: relative;
+}
+
+#frm-int {
+	top: 0;
+	position: fixed;
+	width:100%;
+	height:100%;
+	opacity: 1;
+}
+
+.sansitalic {
+	font-family:"Studio Italic";
+	font-size: 8pt;
+}
+
+.sans {
+	font-family:"Studio";
+	font-size: 8pt;
+}
+
+
+@media only screen and (max-width: 700px) {
+	#info {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	#info {
+		width: 70%;
+	}
+}

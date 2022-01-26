@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>I can't, can you?</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<a class="text" onclick="toggleMenu();toggleOpacity()">I can't, can you?</a>
+	<img src="cristallo.png" id="emot" onclick="toggleInfo()">
+	
+	<div id="info">
+		The moment the screen vanishes and the virtual penetrates the real, the threshold between reality and simulation becomes increasingly blurry. Technological media tend exponentially to transparency, shifting towards a more and more ambiguos immersivity. Is it still possible to recover a perspective, some reference points which belong outside the boundaries of the simulation?
+		<br><br>
+		&ldquo;[...] our world is now defined by an effort of rendering every aspect of existence quantifiable and, thus, calculable: happiness, love, inequality, fitness, the flows of capital and carbon and their effects, all are treated as if they could be properly measured and that these measurements were unambiguously useful in understanding reality. [...] life, according to this view, is nothing more than an extremely complex program with many orders of magnitude more statements.&rdquo;1
+		<br><br>
+		When you&rsquo;re playing a videogame you&rsquo;re always aware of its fiction; the same realization doesn&rsquo;t necessarily emerge when the videogame&rsquo;s own language is adopted for other purposes. The model of the game applied to the digital becomes videogame, which is constitutively limited and defined, being entirely based on binary code. In turn when the model of the videogame is applied, through pervasive technology, to every aspect of our daily life &mdash; which is constitutively incalculable &mdash; it turns our actions, choices and interactions forseeable, calculable and thus commodifiable.
+		<br><br>
+		&ldquo;We touch our screens and trackpads all day long. Tapping, rubbing, and even caressing them, we move our fingers to drive software. But how do the designs of the interfaces we touch drive our fingers in return? What kinds of movements do those interfaces suggest, encourage, or demand? And how might these movements be changing the narratives we encounter every day?&rdquo;2
+		<br><br>
+		&ldquo;Video games come into being when the machine is powered up and the software is executed; they exist when enacted.&rdquo;3 Therefore, videogames appear to be an eloquent metaphor for the actual state of the concept of reality.
+		<br><br>
+		&ldquo;The imaginary was the alibi of the real, in a world dominated by the reality principle. Today, it is the real that has become the alibi of the model, in a world controlled by the principle of simulation. And, paradoxically, it is the real that has become our true utopia &mdash; but a utopia that is no longer in the realm of the possible, that can only be dreamt of as one would dream of a lost object.&rdquo;4
+		<br><br>
+		Alexander Galloway describes videogame&rsquo;s functioning as a constant dialogue between two entities: the operator and the machine. The activity of the machine becomes explicit in that particular context that Galloway defines as Ambience Act, when objects and artificial intellligence are programmed to mould a self-sufficient and apparently living world.
+		<br><br>
+		&ldquo;The material aspects of the game environment reside here, as do actions of non-player characters. This moment is the moment of pure process. The machine is up and running &mdash; no more, no less.&rdquo;5 We decided to break into the Ambience, in an attempt to expose its impassive and isolated nature before the operator, thus revealing its structurally limited state.
+		<br><br>
+		When playing videogames, a conscious separation occurs between the operator and the avatar, allowing a mindful experience of the medium; this same thing doesn&rsquo;t come as natural when interacting with devices where the avatar overlaps and coincides with the subject and whose interfaces&rsquo; main intent is to conceal its dynamics and complexity.
+		<br><br>
+		Our process
+		<br>
+		We explored some gaming-themed subreddits and asked their users the following question: &ldquo;What actions would you like to be able to perform in video games?&rdquo;. In the next section of this volume we listed all the replies that we received and the related comments. From the numerous starting points gathered throughout the set of comments, we attempted to exhibit the videogames&rsquo; limitations, by performing a series of actions that could not be executed, resulting in a collection of metaphors for the programmed nature which nowadays belongs to multiple aspects of our existence. The outcome is a video which &mdash; in its cacophony and irony &mdash; tries to summarize and return the experience of this discomfort.
+		<br><br>
+		<div id="cit">
+			<span class="sans">1. Gui Machiavelli, <span class='sansitalic'>Camp and videogames</span>, NPC CAFE, 2020
+			<br>2. Benjamin Grosser, <span class='sansitalic'>Touching Software (House of Cards)</span>, 2016
+			<br>3. Alexander R. Galloway, Gaming, <span class='sansitalic'>Essays on Algorithmic Culture</span>, University of Minnesota Press, 2006
+			<br>4. Jean Baudrillard, <span class='sansitalic'>Simulacra and Science Fiction</span>, in Simulacra and Simulation, The University of Michigan Press, 1994
+			<br>5. Alexander R. Galloway, Gaming, <span class='sansitalic'>Essays on Algorithmic Culture</span>, University of Minnesota Press, 2006</span>
+		</div>
+	</div>
+
+	<div id="clph">
+		<div>
+			Giovanni Difronzo
+			<br>
+			Daniele Pala
+			<br>
+			Felipe Minicucci
+		</div>
+		<div>
+			a.a. 2021/2022
+			<br>
+			ISIA Urbino
+		</div>
+		<div>
+			Sociologia della comunicazione
+			<br>
+			Matteo Guidi
+		</div>
+	</div>
+	
+	<div class="frm">
+		<iframe id="frm-int" src="https://player.vimeo.com/video/670130442?h=2addee1f97&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;loop=1&amp;autopause=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="I can&amp;#039;t, can you?">	
+		</iframe>
+	</div>
+	
+	<script src="https://player.vimeo.com/api/player.js"></script>
+
+	<script>
+		function toggleMenu() {
+		var boxTesto = document.getElementById('info');
+			if (boxTesto.style.display == "block") {
+				boxTesto.style.display = "none";
+			} else {
+				boxTesto.style.display = "block";
+			}
+		}
+
+		function toggleOpacity() {
+		var frameOp = document.getElementById('frm-int');
+			if (frameOp.style.opacity == "0.5") {
+				frameOp.style.opacity = "1";
+			} else {
+				frameOp.style.opacity = "0.5";
+			}
+		}
+		function toggleInfo() {
+		var boxInfo = document.getElementById('clph');
+			if (boxInfo.style.display == "inline-flex") {
+				boxInfo.style.display = "none";
+			} else {
+				boxInfo.style.display = "inline-flex";
+			}
+		}
+	</script>
+</body>
+</html>
